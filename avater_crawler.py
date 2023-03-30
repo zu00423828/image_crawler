@@ -36,7 +36,7 @@ def download_img(url: str, save_dir: str, count, ua: UserAgent, session):
 def browser_init():
     options = webdriver.ChromeOptions()
     options.add_argument("headless")
-    s = Service("/home/yuan/桌面/tempcode/crawler_ettody/chromedriver")
+    s = Service("./chromedriver")
     browser = webdriver.Chrome(
         service=s, options=options)
     return browser
